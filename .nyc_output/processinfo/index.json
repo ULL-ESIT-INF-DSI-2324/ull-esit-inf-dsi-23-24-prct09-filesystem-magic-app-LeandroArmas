@@ -1,0 +1,1 @@
+{"processes":{"67a98b8a-6ab4-4199-9672-a09806c79f92":{"parent":"d7027d56-8971-4b5a-8a1f-8a9ace994db6","children":[]},"d7027d56-8971-4b5a-8a1f-8a9ace994db6":{"parent":null,"children":["67a98b8a-6ab4-4199-9672-a09806c79f92"]}},"files":{"/home/usuario/personal_repo/src/index.ts":["67a98b8a-6ab4-4199-9672-a09806c79f92"]},"externalIds":{}}

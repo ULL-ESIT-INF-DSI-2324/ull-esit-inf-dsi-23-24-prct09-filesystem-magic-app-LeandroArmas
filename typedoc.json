@@ -1,0 +1,8 @@
+{
+  "entryPoints": ["src/*.ts"],
+  "out": "./docs",
+  "name": "Repo plantilla",
+  "exclude": ["**/*.spec.ts"],
+  "theme": "default",
+  "readme": "README.md",
+}

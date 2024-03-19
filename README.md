@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/T5K9tzcv)
+# Repo plantilla para todas las prácticas
+
+[![Tests](https://github.com/LeandroArmas/personal_repo/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/LeandroArmas/personal_repo/actions/workflows/node.js.yml)
+
+[![Coverage Status](https://coveralls.io/repos/github/LeandroArmas/personal_repo/badge.svg?branch=main)](https://coveralls.io/github/LeandroArmas/personal_repo?branch=main)
