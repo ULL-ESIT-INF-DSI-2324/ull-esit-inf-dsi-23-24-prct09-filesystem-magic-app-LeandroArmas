@@ -1,7 +1,7 @@
 {
   "entryPoints": ["src/*.ts"],
   "out": "./docs",
-  "name": "PRactica 9",
+  "name": "Práctica 9",
   "exclude": ["**/*.spec.ts"],
   "theme": "default",
   "readme": "README.md",
