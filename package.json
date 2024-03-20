@@ -4,7 +4,7 @@
   "description": "",
   "main": "basicFunctions.js",
   "scripts": {
-    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "start": "tsc-watch --onSuccess ",
     "doc": "typedoc",
     "test": "mocha",
     "coverage": "nyc npm test && nyc report --reporter=lcov"
