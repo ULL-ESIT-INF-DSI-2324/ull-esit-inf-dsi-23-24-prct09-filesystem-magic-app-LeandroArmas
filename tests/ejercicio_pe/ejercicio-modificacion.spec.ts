@@ -1,6 +1,6 @@
 import 'mocha';
 //import { expect } from 'chai';
-import { clientCode, CSVProcessor, JSONProcessor} from '../src/ejercicio-modificacion';
+import { clientCode, CSVProcessor, JSONProcessor} from '../../src/ejercicio_pe/ejercicio-modificacion';
 
 describe('Test de evaluación', () => {
     
