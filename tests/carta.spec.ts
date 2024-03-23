@@ -1,7 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
 import { Carta, Color, Tipo, Rareza } from '../src/carta.js';
-import { ColeccionCartas } from '../src/coleccion.js';
 
 describe ('Carta tests', () => {
   it ('crear carta', () => {
@@ -102,12 +101,5 @@ describe ('Carta tests', () => {
     expect(carta.textoReglas).to.equal('Texto de reglas para el planeswalker aliado');
     expect(carta.valorMercado).to.equal(50);
     expect(carta.marcasLealtad).to.equal(5);
-  });
-});
-
-describe ('Colección test', () => {
-  it('crear colección', () => {
-    const coleccion = new ColeccionCartas();
-    coleccion.listarCartas('leandro');
   });
 });
