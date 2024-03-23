@@ -1,3 +1,6 @@
+/**
+ * Enumeración que representa los colores de las cartas.
+ */
 export enum Color {
   Blanco = "Blanco",
   Azul = "Azul",
@@ -8,6 +11,9 @@ export enum Color {
   Multicolor = "Multicolor"
 }
 
+/**
+ * Enumeración que representa los tipos de las cartas.
+ */
 export enum Tipo {
   Tierra = "Tierra",
   Criatura = "Criatura",
@@ -18,6 +24,9 @@ export enum Tipo {
   Planeswalker = "Planeswalker"
 }
 
+/**
+ * Enumeración que representa las rarezas de las cartas.
+ */
 export enum Rareza {
   Comun = "Comun",
   Infrecuente = "Infrecuente",
@@ -25,7 +34,23 @@ export enum Rareza {
   Mitica = "Mitica"
 }
 
+/**
+ * Clase que representa una carta del juego.
+ */
 export class Carta {
+  /**
+   * Constructor de la clase Carta.
+   * @param id El ID de la carta.
+   * @param nombre El nombre de la carta.
+   * @param costeMana El coste de mana de la carta.
+   * @param color El color de la carta.
+   * @param tipo El tipo de la carta.
+   * @param rareza La rareza de la carta.
+   * @param textoReglas El texto de reglas de la carta.
+   * @param valorMercado El valor de mercado de la carta.
+   * @param fuerzaResistencia (Opcional) La fuerza y resistencia de la carta (solo para criaturas).
+   * @param marcasLealtad (Opcional) Las marcas de lealtad de la carta (solo para planeswalkers).
+   */
   constructor(
     public id: number,
     public nombre: string,

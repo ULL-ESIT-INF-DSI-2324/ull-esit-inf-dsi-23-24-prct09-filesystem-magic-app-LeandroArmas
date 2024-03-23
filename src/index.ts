@@ -6,6 +6,9 @@ import { Carta, Color, Tipo, Rareza } from './carta.js';
 
 const coleccion = new ColeccionCartas;
 
+/**
+ * Configuración yargs para el comando 'add'.
+ */
 let argv = yargs(hideBin(process.argv))
   .command(
     'add',
@@ -47,6 +50,9 @@ let argv = yargs(hideBin(process.argv))
   )
   .help().argv;
 
+/**
+ * Configuración yargs para el comando 'update'.
+ */
 argv = yargs(hideBin(process.argv))
   .command(
     'update',
@@ -88,6 +94,9 @@ argv = yargs(hideBin(process.argv))
   )
   .help().argv;
 
+/**
+ * Configuración yargs para el comando 'remove'.
+ */
 argv = yargs(hideBin(process.argv))
   .command(
     'remove',
@@ -102,6 +111,9 @@ argv = yargs(hideBin(process.argv))
   )
   .help().argv;
 
+/**
+ * Configuración yargs para el comando 'list'.
+ */
 argv = yargs(hideBin(process.argv))
   .command(
     'list',
@@ -115,6 +127,9 @@ argv = yargs(hideBin(process.argv))
   )
   .help().argv;
 
+/**
+ * Configuración yargs para el comando 'show'.
+ */
 argv = yargs(hideBin(process.argv))
   .command(
     'show',

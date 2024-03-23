@@ -2,9 +2,16 @@ import * as fs from 'fs';
 import chalk from 'chalk';
 import { Carta } from './carta.js';
 
+/**
+ * Clase que representa una colección de cartas.
+ */
 export class ColeccionCartas {
 	private coleccion: Carta[] = [];
 
+	/**
+   * Imprime la información de una carta con color.
+   * @param carta La información de la carta en formato JSON.
+   */
 	private ImprimirConColor(carta: string): void {
 		const CartaJson = JSON.parse(carta);
 		let resultado = '';
@@ -51,6 +58,11 @@ export class ColeccionCartas {
 		}
   }
 
+	/**
+   * Agrega una nueva carta a la colección.
+   * @param carta La carta a agregar.
+   * @param usuario El nombre del usuario.
+   */
 	public agregarCarta(carta: Carta, usuario: string): void {
 		const DirectorioUsuario = `./cartas/${usuario}`;
     const RutaCarta = `${DirectorioUsuario}/${carta.id}.json`;
@@ -68,6 +80,11 @@ export class ColeccionCartas {
 
 	}
 
+	/**
+   * Actualiza una carta existente en la colección.
+   * @param carta La carta actualizada.
+   * @param usuario El nombre del usuario.
+   */
 	public actualizarCarta(carta: Carta, usuario: string): void {
 		const DirectorioUsuario = `./cartas/${usuario}`;
     const RutaCarta = `${DirectorioUsuario}/${carta.id}.json`;
@@ -81,6 +98,11 @@ export class ColeccionCartas {
 
 	}
 
+  /**
+   * Elimina una carta de la colección.
+   * @param id El ID de la carta a eliminar.
+   * @param usuario El nombre del usuario.
+   */
 	public eliminarCarta(id: number, usuario: string): void {
 		const DirectorioUsuario = `./cartas/${usuario}`;
     const RutaCarta = `${DirectorioUsuario}/${id}.json`;
@@ -94,6 +116,10 @@ export class ColeccionCartas {
 
 	}
 
+	/**
+   * Lista todas las cartas en la colección de un usuario.
+   * @param usuario El nombre del usuario.
+   */
 	public listarCartas(usuario: string): void {
 		const DirectorioUsuario = `./cartas/${usuario}`;
 
@@ -109,6 +135,11 @@ export class ColeccionCartas {
 
 	}
 
+	/**
+   * Muestra la información de una carta específica en la colección de un usuario.
+   * @param id El ID de la carta a mostrar.
+   * @param usuario El nombre del usuario.
+   */
 	public mostrarCarta(id: number, usuario: string): void {
 		const DirectorioUsuario = `./cartas/${usuario}`;
     const RutaCarta = `${DirectorioUsuario}/${id}.json`;
