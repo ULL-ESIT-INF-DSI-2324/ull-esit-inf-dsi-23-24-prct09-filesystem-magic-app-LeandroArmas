@@ -140,7 +140,7 @@ export function clientCode(processor: ProcesadorMochila): void {
 }
 
 // Instancias para comprobar el funcionamiento
-const csvProcessor = new CSVProcessor("./src/pruebacsv.csv");
-const jsonProcessor = new JSONProcessor("./src/pruebajson.json");
+const csvProcessor = new CSVProcessor("./src/ejercicio_pe/pruebacsv.csv");
+const jsonProcessor = new JSONProcessor("./src/ejercicio_pe/pruebajson.json");
 clientCode(csvProcessor);
 clientCode(jsonProcessor);

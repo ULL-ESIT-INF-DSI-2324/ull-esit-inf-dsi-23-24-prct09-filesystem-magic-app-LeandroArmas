@@ -5,12 +5,12 @@ import { clientCode, CSVProcessor, JSONProcessor} from '../../src/ejercicio_pe/e
 describe('Test de evaluación', () => {
     
     it('crear correctamente sin errores csv', () => {
-        const csvProcessor = new CSVProcessor("./src/pruebacsv.csv");
+        const csvProcessor = new CSVProcessor("./src/ejercicio_pe/pruebacsv.csv");
         clientCode(csvProcessor);
     });
 
     it('crear correctamente sin errores json', () => {
-        const jsonProcessor = new JSONProcessor("./src/pruebajson.json");
+        const jsonProcessor = new JSONProcessor("./src/ejercicio_pe/pruebajson.json");
         clientCode(jsonProcessor);
     });
 });
