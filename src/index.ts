@@ -102,7 +102,7 @@ argv = yargs(hideBin(process.argv))
   )
   .help().argv;
 
-yargs(hideBin(process.argv))
+argv = yargs(hideBin(process.argv))
   .command(
     'list',
     'Lista las cartas de la coleccion',
