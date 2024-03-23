@@ -5,8 +5,6 @@ import { Carta } from './carta.js';
 export class ColeccionCartas {
 	private coleccion: Carta[] = [];
 
-	constructor() {}
-
 	private ImprimirConColor(carta: string): void {
 		const CartaJson = JSON.parse(carta);
 		let resultado = '';

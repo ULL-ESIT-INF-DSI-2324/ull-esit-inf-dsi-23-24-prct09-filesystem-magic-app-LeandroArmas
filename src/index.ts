@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import { ColeccionCartas } from './coleccion.js';
@@ -5,7 +6,7 @@ import { Carta, Color, Tipo, Rareza } from './carta.js';
 
 const coleccion = new ColeccionCartas;
 
-yargs(hideBin(process.argv))
+let argv = yargs(hideBin(process.argv))
   .command(
     'add',
     'Añade una carta',
@@ -46,7 +47,7 @@ yargs(hideBin(process.argv))
   )
   .help().argv;
 
-yargs(hideBin(process.argv))
+argv = yargs(hideBin(process.argv))
   .command(
     'update',
     'Actualiza una carta',
@@ -87,7 +88,7 @@ yargs(hideBin(process.argv))
   )
   .help().argv;
 
-yargs(hideBin(process.argv))
+argv = yargs(hideBin(process.argv))
   .command(
     'remove',
     'Elimina una carta',
@@ -114,7 +115,7 @@ yargs(hideBin(process.argv))
   )
   .help().argv;
 
-yargs(hideBin(process.argv))
+argv = yargs(hideBin(process.argv))
   .command(
     'show',
     'Mostrar la info de una carta',
