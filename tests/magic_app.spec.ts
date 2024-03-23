@@ -106,8 +106,22 @@ describe ('Carta tests', () => {
 });
 
 describe ('Colección test', () => {
-  it('crear colección', () => {
-    const coleccion = new ColeccionCartas();
+  const coleccion = new ColeccionCartas();
+  it('agregar carta a colección', () => {
+    const carta = new Carta(303, 'Planewalker Aliado', 5, "Blanco" as Color, 'Planeswalker' as Tipo, 'Mítica' as Rareza, 'Texto de reglas para el planeswalker aliado', 50, undefined, 5);
+    coleccion.agregarCarta(carta, 'leandro');
+  });
+  it('actualizar carta de una colección', () => {
+    const carta = new Carta(303, 'Planewalker Aliado', 5, "Blanco" as Color, 'Planeswalker' as Tipo, 'Mítica' as Rareza, 'Texto de reglas para el planeswalker aliado', 50, undefined, 5);
+    coleccion.actualizarCarta(carta, 'leandro');
+  });
+  it('borrar carta de una colección', () => {
+    coleccion.eliminarCarta(303, 'leandro');
+  });
+  it('mostrar colección', () => {
     coleccion.listarCartas('leandro');
+  });
+  it('mostrar carta de una colección', () => {
+    coleccion.mostrarCarta(1, 'leandro');
   });
 });
